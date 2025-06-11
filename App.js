@@ -9,7 +9,7 @@ import { spacing ,fontSizes} from './src/utils/sizes.js';
 
 
 export default function App() {
- const [focusSubject,setfocusSubject]=useState("gardening");
+ const [focusSubject,setfocusSubject]=useState("Learning React Native");
  return (
     <View style={styles.container}>
       {focusSubject ?(

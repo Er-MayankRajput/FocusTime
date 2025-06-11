@@ -6,14 +6,14 @@ import { spacing } from "../../utils/sizes";
 import { colors } from "../../utils/colors";
 
 export const Focus= ({addSubject}) => {
-  const [tmpItem,settmpItem]=useState('')
+  const [tmpItem,setTmpItem]=useState(null)
   return (
     <View style={styles.container}>
       <View style={styles.titleContainer}>
       <Text>What  would you like to Focus On ? </Text>
       <View style={styles.inputContainer}>
         <TextInput style={{flex:1 ,marginRight:spacing.md}}  onSubmitEditing={({ nativeEvent }) => {
-              settmpItem(nativeEvent.text); 
+              setTmpItem(nativeEvent.text); 
             }} />
         <RoundedButton size={50} title="+" onPress={()=>addSubject(tmpItem)}/>
       </View>
